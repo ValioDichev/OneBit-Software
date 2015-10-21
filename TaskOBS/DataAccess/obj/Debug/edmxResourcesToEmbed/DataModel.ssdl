@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbTaskModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblContacts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sex" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telephone" Type="int" Nullable="false" />
+    <Property Name="PhotoURL" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblStatuses">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatusName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FKContactStatus">
+    <End Role="tblStatuses" Type="Self.tblStatuses" Multiplicity="1" />
+    <End Role="tblContacts" Type="Self.tblContacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStatuses">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblContacts">
+        <PropertyRef Name="Status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbTaskModelStoreContainer">
+    <EntitySet Name="tblContacts" EntityType="Self.tblContacts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblStatuses" EntityType="Self.tblStatuses" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FKContactStatus" Association="Self.FKContactStatus">
+      <End Role="tblStatuses" EntitySet="tblStatuses" />
+      <End Role="tblContacts" EntitySet="tblContacts" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

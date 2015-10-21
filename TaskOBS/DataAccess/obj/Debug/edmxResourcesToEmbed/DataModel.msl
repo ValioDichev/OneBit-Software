@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbTaskModelStoreContainer" CdmEntityContainer="dbTaskEntities">
+    <EntitySetMapping Name="tblContacts">
+      <EntityTypeMapping TypeName="dbTaskModel.tblContacts">
+        <MappingFragment StoreEntitySet="tblContacts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="PhotoURL" ColumnName="PhotoURL" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStatuses">
+      <EntityTypeMapping TypeName="dbTaskModel.tblStatuses">
+        <MappingFragment StoreEntitySet="tblStatuses">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

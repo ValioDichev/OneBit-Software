@@ -1,0 +1,11 @@
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DummyData\bin\Debug\DummyData.exe.config
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DummyData\bin\Debug\DummyData.exe
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DummyData\bin\Debug\DummyData.pdb
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DummyData\bin\Debug\DataAccess.dll
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DummyData\bin\Debug\EntityFramework.dll
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DummyData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DummyData\bin\Debug\DataAccess.pdb
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DummyData\bin\Debug\EntityFramework.xml
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DummyData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DummyData\obj\Debug\DummyData.exe
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DummyData\obj\Debug\DummyData.pdb

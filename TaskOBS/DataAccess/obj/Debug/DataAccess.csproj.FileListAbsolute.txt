@@ -1,0 +1,10 @@
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Val\Documents\Visual Studio 2015\Projects\TaskOBS\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache

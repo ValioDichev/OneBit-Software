@@ -1,0 +1,33 @@
+﻿@model IEnumerable<TaskOBS.Models.Contacts>
+
+<div class="container">
+    <div class="row">
+        <ul class="contacts-list">
+            @{
+                foreach (var item in Model)
+                {
+                    <li class="col-lg-3 sigle-contact">
+                        <img src="@item.PhotoURL" alt="Person Photo" />
+                        <span><b>First Name: </b>@item.FName</span>
+                        <span>
+                            <b>Last Name: </b>@item.LName
+                        </span>
+                        <span>
+                            <b>Sex: </b>@item.Sex
+                        </span>
+                        <span>
+                            <b>Phone: </b>@item.Phone
+                        </span>
+                        <span>
+                            <b>Current Status: </b>@item.Status
+                        </span>
+                        <span class="btn btn-disable"><input type="button" name="Disable" value="Disable" /></span>
+                        <span class="btn btn-disable"><input type="button" name="Delete" value="Delete" /></span>
+</li>
+                }
+            }
+        </ul>
+    </div>
+</div>
+<h2></h2>
+

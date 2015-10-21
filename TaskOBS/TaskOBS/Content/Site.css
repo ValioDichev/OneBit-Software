@@ -1,0 +1,128 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.contacts-list {
+    padding: 20px 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.sigle-contact {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+    .sigle-contact:hover {
+        border: 1px solid #67A4FF;
+        rgba(103,164,255,1) -webkit-box-shadow: 0px 0px 10px 0px rgba(103,164,255, 0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(103,164,255, 0.75);
+        box-shadow: 0px 0px 10px 0px rgba(103,164,255, 0.75);
+    }
+
+        .sigle-contact:hover img {
+            -webkit-filter: brightness(100%);
+        }
+
+    .sigle-contact img {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 5px;
+        -webkit-filter: brightness(65%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+
+
+    .sigle-contact span {
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+    }
+
+        .sigle-contact span + span {
+            border-top: 1px solid #ccc;
+        }
+
+    .sigle-contact .btn {
+        margin: .4em;
+        padding: 10px;
+        cursor: pointer;
+        background: #e1e1e1;
+        text-decoration: none;
+        color: #666;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+    }
+
+        .sigle-contact .btn:before {
+            pointer-events: none;
+            position: absolute;
+            z-index: -1;
+            content: '';
+            top: 100%;
+            left: 5%;
+            height: 10px;
+            width: 90%;
+            opacity: 0;
+            background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform, opacity;
+            transition-property: transform, opacity;
+        }
+
+        .sigle-contact .btn:hover {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+
+            .sigle-contact .btn:hover:before {
+                opacity: 1;
+                -webkit-transform: translateY(5px);
+                transform: translateY(5px);
+        }
+
+.sigle-contact .btn input {
+    -webkit-appearance:none !important;
+    border: none;
+    background: none;
+}
